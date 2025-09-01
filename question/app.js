@@ -119,3 +119,10 @@ console.log('5 を 3 で割った余りは ' + remainder(5, 3) + ' です。');
 
 
 // 応用編
+// Q1 標準組み込みオブジェクト
+console.log(Math.floor(Math.random() * (9 + 1)));
+
+// Q2 コールバック関数
+// setTimeout(function() {
+//     console.log('Hello World!');
+// }, 3);
