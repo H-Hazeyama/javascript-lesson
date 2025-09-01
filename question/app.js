@@ -46,4 +46,28 @@ console.log(playerList[1].favorites[1]);
 
 
 // Q5 四則演算
+let avarageAge = (playerList[0].age + playerList[1].age + playerList[2].age) / 3;
+
+console.log(avarageAge);
+
+
+// Q6 関数
+function sayHello() {
+    console.log('Hello');
+}
+sayHello();
+
+const sayWorld = function() {
+    console.log('World');
+}
+sayWorld();
+
+
+// Q7 メソッド
+user.birthday = '2000-09-27';
+user.sayHello = function() {
+    console.log('Hello！');
+};
+user.sayHello();
+
 
