@@ -71,3 +71,46 @@ user.sayHello = function() {
 user.sayHello();
 
 
+// Q8 引数
+let calc = {};
+
+calc.add = function(x, y) {
+    console.log(x + y);
+};
+calc.add(2,5);
+
+calc.subtract = function(x, y) {
+    console.log(x - y);
+};
+calc.subtract(11,1);
+
+calc.multiply = function(x, y) {
+    console.log(x * y);
+};
+calc.multiply(7, 7);
+
+calc.divide = function(x, y) {
+    console.log(x / y);
+};
+calc.divide(10, 2);
+
+
+// Q9 返り値
+function remainder(x, y) {
+    return x % y;
+}
+console.log('5 を 3 で割った余りは ' + remainder(5, 3) + ' です。');
+
+
+// Q10 スコープ
+
+// function foo() {
+//   let x = 1;
+// }
+// console.log(x);
+
+// 上記の関数実行時にエラーが出るのは「console.log()」の引数にスコープ外の変数を指定しているためです。
+// 変数xは関数foo内で宣言されているためそれが有効となるスコープの範囲も関数内とされます。
+// しかし現在その範囲外であるconsole.log()が変数xを参照しようとしている状態であり、
+// console.log()は変数xを見つけられないためエラーが出ているという認識です。
+// もし修正する場合はconsole.log()を関数内に組み込んで、関数fooを実行することで変数xの値がコンソールに出力されると考えます。
