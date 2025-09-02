@@ -27,19 +27,19 @@ console.log(user.age);
 // Q4 配列 × オブジェクト
 let playerList = [
   {
-    name: 'John',
-    age: 26,
-    favorites: ['Card Game', 'Basket Ball', 'Programming'],
+  name: 'John',
+  age: 26,
+  favorites: ['Card Game', 'Basket Ball', 'Programming'],
   },
   {
-    name: 'Bob',
-    age: 33,
-    favorites: ['Tinder', 'The Legend of Zelda'],
+  name: 'Bob',
+  age: 33,
+  favorites: ['Tinder', 'The Legend of Zelda'],
   },
   {
-    name: 'Michael',
-    age: 22,
-    favorites: ['Football', 'Smash Bros.'],
+  name: 'Michael',
+  age: 22,
+  favorites: ['Football', 'Smash Bros.'],
   },
 ];
 
@@ -54,12 +54,12 @@ console.log(avarageAge);
 
 // Q6 関数
 function sayHello() {
-    console.log('Hello');
+  console.log('Hello');
 }
 sayHello();
 
 const sayWorld = function() {
-    console.log('World');
+  console.log('World');
 }
 sayWorld();
 
@@ -67,7 +67,7 @@ sayWorld();
 // Q7 メソッド
 user.birthday = '2000-09-27';
 user.sayHello = function() {
-    console.log('Hello！');
+  console.log('Hello！');
 };
 user.sayHello();
 
@@ -76,29 +76,29 @@ user.sayHello();
 let calc = {};
 
 calc.add = function(x, y) {
-    console.log(x + y);
+  console.log(x + y);
 };
 calc.add(2,5);
 
 calc.subtract = function(x, y) {
-    console.log(x - y);
+  console.log(x - y);
 };
 calc.subtract(11,1);
 
 calc.multiply = function(x, y) {
-    console.log(x * y);
+  console.log(x * y);
 };
 calc.multiply(7, 7);
 
 calc.divide = function(x, y) {
-    console.log(x / y);
+  console.log(x / y);
 };
 calc.divide(10, 2);
 
 
 // Q9 返り値
 function remainder(x, y) {
-    return x % y;
+  return x % y;
 }
 console.log('5 を 3 で割った余りは ' + remainder(5, 3) + ' です。');
 
@@ -124,35 +124,35 @@ console.log(Math.floor(Math.random() * (9 + 1)));
 
 // Q2 コールバック関数
 setTimeout(function() {
-    console.log('Hello World!');
+  console.log('Hello World!');
 }, 3000);
 
 // Q3 if
 let num = 1;
 
 if (num > 0) {
-    console.log('num is greater than 0');
+  console.log('num is greater than 0');
 } else if (num < 0 && num) {
-    console.log('num is less than 0');
+  console.log('num is less than 0');
 } else if (num === 0) {
-    console.log('num is 0');
+  console.log('num is 0');
 }
 
 // Q4 for
 let numbers = [];
 for (let i = 0; i < 100; i++) {
-    numbers[i] = i;
-    console.log(numbers[i]);
+  numbers[i] = i;
+  console.log(numbers[i]);
 }
 
 // Q5 for × if
 let mixed = [4, '2', 5, '8', '9', 0, 1];
 for (let i = 0; i < mixed.length; i++){
-    if ((typeof mixed[i]) === "number" && (mixed[i] % 2) === 0) {
-        console.log('even');
-    } else if (typeof mixed[i] === "number" && (mixed[i] % 2) !== 0) {
-        console.log('odd');
-    } else {
-        console.log('not number');
-    }
+  if ((typeof mixed[i]) === "number" && (mixed[i] % 2) === 0) {
+    console.log('even');
+  } else if (typeof mixed[i] === "number" && (mixed[i] % 2) !== 0) {
+    console.log('odd');
+  } else {
+    console.log('not number');
+  }
 }
